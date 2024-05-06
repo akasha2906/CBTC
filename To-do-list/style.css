@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;    
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+nav>h1{
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+.mainbody{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.taskbar{
+    width: 30%;
+    height: 25%;
+    border: 1px solid brown;
+    margin-top: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.worklists{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#workspace{
+    width: 80%;
+    height: 90%;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* padding: 50px; */
+    overflow: auto;    
+}
+
+#taskname,#description{
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    font-size: 17px;
+    border-radius: 3px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+#duedate{
+    height: 30px;
+    outline: none;
+    width: 130px;
+    margin-left: 50px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+
+input::placeholder{
+    font-size: 17px;
+}
+
+#description{
+    width: 435px;
+    margin-top: 20px;
+}
+
+#addbutton{
+    height: 35px;
+    width: 95px;
+    background: transparent;
+    border: 0;
+    border: 1px solid orange;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+#workspace>div{
+    /* height: 250px; */
+     width: 280px;
+     background-color: rgba(232, 207, 163, 0.342);
+     text-align: justify;
+     margin: 20px;
+     padding: 10px;
+     border: 1px solid black;
+     border-radius: 25px;
+     padding: 25px;
+     display: flex;
+     flex-direction: column;
+}
+
+#workspace>div>h1{
+    margin-top: -13px;
+    font-size: 30px;
+    /* color: blue; */
+    text-transform: capitalize;
+    
+}
+
+
+
+#workspace>div>p{
+    width: auto;
+    height: 50%;
+    /* background-color: blue; */
+    margin-top: 15px;
+    font-size: 18px;
+    /* overflow:auto; */
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    
+}
+
+#workspace>div>#deletebtn{
+    height: 30px;
+    width: 80px;
+    margin-left: 145px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.aligndata{
+    /* background-color: aqua; */
+    margin-top: 5px;
+    margin-left: 120px;
+    font-size: 5px;
+    color: rgb(233, 40, 40);
+}
